@@ -6,7 +6,7 @@
 
 Highly customizable cupertino date picker
 
-<img src="https://raw.githubusercontent.com/Dihardja-Software/date-picker-component/master/docs/assets/datepicker.PNG" />
+<img src="https://raw.githubusercontent.com/Dihardja-Software/date-picker-component/master/doc/assets/datepicker.PNG" />
 
 ## Usage
 ```dart
