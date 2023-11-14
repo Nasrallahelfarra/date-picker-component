@@ -1,7 +1,7 @@
-name: cupertino_date_picker
+name: dss_cupertino_date_picker
 description: Customizable cupertino date picker.
 version: 1.0.0
-homepage: 'https://github.com/Dihardja-Software/date-picker-component'
+repository: 'https://github.com/Dihardja-Software/date-picker-component'
 
 environment:
   sdk: '>=3.0.5 <4.0.0'

@@ -1,6 +1,6 @@
 # Cupertino Date Picker
 <p>
-	<a href="https://pub.dev/packages/cupertino_date_picker" rel="noopener" target="_blank"><img src="https://img.shields.io/pub/v/cupertino_date_picker.svg" alt="Pub.dev Badge"></a>
+	<a href="https://pub.dev/packages/dss_cupertino_date_picker" rel="noopener" target="_blank"><img src="https://img.shields.io/pub/v/dss_cupertino_date_picker.svg" alt="Pub.dev Badge"></a>
 	<a href="https://github.com/Dihardja-Software/date-picker-component" rel="noopener" target="_blank"><img src="https://img.shields.io/badge/platform-flutter-ff69b4.svg" alt="Flutter Platform Badge"></a>
 </p>
 
