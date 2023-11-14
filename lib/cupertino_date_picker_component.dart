@@ -12,18 +12,28 @@ class CupertinoDatePicker extends StatefulWidget {
   final double magnification;
   final double squeeze;
   final void Function(DateTime) onSelectedItemChanged;
+
+  // Text style of selected item
+  final TextStyle? selectedStyle;
+  // Text style of unselected item
+  final TextStyle? unselectedStyle;
+  // Text style of disabled item
+  final TextStyle? disabledStyle;
+
   // Minimum selectable date
   final DateTime? minDate;
   // Maximum selectable date
   final DateTime? maxDate;
   // Initially selected date
   final DateTime? selectedDate;
-  final TextStyle? textStyle;
 
   const CupertinoDatePicker({
     Key? key,
     required this.itemExtent,
     required this.onSelectedItemChanged,
+    this.selectedStyle,
+    this.unselectedStyle,
+    this.disabledStyle,
     this.minDate,
     this.maxDate,
     this.selectedDate,
@@ -34,7 +44,6 @@ class CupertinoDatePicker extends StatefulWidget {
     this.offAxisFraction = 0.0,
     this.useMagnifier = false,
     this.selectionOverlay = const CupertinoPickerDefaultSelectionOverlay(),
-    this.textStyle,
   }) : super(key: key);
   @override
   State<CupertinoDatePicker> createState() => _CupertinoDatePickerState();
@@ -276,7 +285,11 @@ class _CupertinoDatePickerState extends State<CupertinoDatePicker> {
         alignment: Alignment.center,
         child: Text(
           '${values[index]}',
-          style: widget.textStyle,
+          style: index == selectedValueIndex
+              ? widget.selectedStyle
+              : isDisabled(index)
+                  ? widget.disabledStyle
+                  : widget.unselectedStyle,
         ),
       ),
     );

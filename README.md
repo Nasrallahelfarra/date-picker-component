@@ -1,17 +1,44 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Cupertino Date Picker
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+Highly customizable cupertino date picker
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+<img src="https://raw.githubusercontent.com/Dihardja-Software/date-picker-component/master/docs/assets/datepicker.PNG" />
 
-A customizable cupertino date picker component.
+## Usage
+```dart
+  SizedBox(
+    height: 300,
+    child: CupertinoDatePicker(
+      itemExtent: 50,
+      minDate: _minDate,
+      maxDate: _maxDate,
+      selectedDate: _selectedDate,
+      selectionOverlay: Container(
+        width: double.infinity,
+        height: 50,
+        decoration: const BoxDecoration(
+          border: Border.symmetric(
+            horizontal: BorderSide(color: Colors.grey, width: 1),
+          ),
+        ),
+      ),
+      selectedStyle: const TextStyle(
+        color: Colors.black,
+        fontWeight: FontWeight.w600,
+        fontSize: 24,
+      ),
+      unselectedStyle: TextStyle(
+        color: Colors.grey[800],
+        fontSize: 18,
+      ),
+      disabledStyle: TextStyle(
+        color: Colors.grey[400],
+        fontSize: 18,
+      ),
+      onSelectedItemChanged: (date) => _selectedDate = date,
+    ),
+  ),
+```
 
 ## License
 
