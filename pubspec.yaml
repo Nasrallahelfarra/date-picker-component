@@ -1,5 +1,5 @@
 name: dss_date_picker_component
-description: A new Flutter package project.
+description: A customizable cupertino date picker component.
 version: 0.0.1
 homepage: 'https://dihardjasoftware.com/'
 repository: 'https://github.com/Dihardja-Software/date-picker-component'
