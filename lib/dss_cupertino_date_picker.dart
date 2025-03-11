@@ -341,8 +341,6 @@ class _CupertinoDatePickerState extends State<CupertinoDatePicker> {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Expanded(child: _monthSelector()),
-        Expanded(child: _daySelector()),
         Expanded(child: _yearSelector()),
       ],
     );
